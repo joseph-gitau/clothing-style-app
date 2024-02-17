@@ -1,0 +1,29 @@
+.container{
+    max-width: 100%;
+    height: auto;
+    border: 1px  black;
+    margin: 100px;
+  }
+  .carousel-item{
+  
+  background-size: cover;
+  }
+  .d-block{
+  
+   margin: 100px;
+  height: auto;
+   width: 100%;
+  }
+  .carousel-caption{
+   
+      position: absolute;
+      top: 50%;
+      padding-right: 50;
+      padding-left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      
+    
+    font-weight: bold;
+  }
+  

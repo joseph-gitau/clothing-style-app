@@ -1,0 +1,17 @@
+.card{
+    width: 400px;
+  }
+  .card-img-top{
+    width: 100px;
+    height: auto;
+  }
+  .card-img-bottom{
+    width: 100px;
+    height: auto;
+  }
+  #project{
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    {{{body}}}
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <header><nav class="fixed-top">
+        <div class="container-fluid" >
+        <a class="navbar-brand" href="#"></a>
+      <img src="/images/logo.png"  class="rounded-pill">
+      </div>
+      
+    <ul class="nav justify-content-end">
+    <li><a class="text-light" href="home.hbs">Home</a></li>
+    <li><a class="text-light" href="knowme.hbs">Know me</a></li>
+    <li><a class="text-light" href="projects.hbs">Projects</a></li>
+    <li><a class="text-light" href="contact.hbs">Contact me</a></li>
+    </ul>
+     </nav>
+     </header>
+     <!-- This is the homepage part-->
+     <!--creating a slideshow also known as carousel -->
+<div class="containers">
+  <div  class="carousel slide" data-bs-ride="carousel">
+
+  <!-- this part of code displays the number of slide show by points at the bottom -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+  </div>
+  
+  <!-- This is the main part of the  carousel. It shows the images slide by slide -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/s1.png" alt="s1" class="d-block">
+      <div class="carousel-caption">
+        <h1>NUPUR PATEL</h1>
+        <span>Computer programming student</span>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/s2.png" alt="s2" class="d-block">
+      <div class="carousel-caption">
+        <h1>Welcome to My Portfolio</h1>
+        <p> Here, you'll discover a showcase of my passion and proficiency in web development, design, and problem-solving.
+           Feel free to explore my projects and learn more about my journey in crafting digital experiences.
+           I hope you find inspiration and insight within these pages. Enjoy your visit!</p>
+      </div> 
+    </div>
+    </div>
+  </div>
+  
+  <!--This part of code executes previous button and next button -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+</div> 
+<br><br>
+
+<!-- here starts the know ME parrt-->
+<h1 id="knowme">Get to know me!!</h1><br>
+<div class="container mt-3">
+  <img src="/images/js-logo.png" alt="js-logo" class="logo"><br>
+  <a href="#statement" class="btn btn-primary" data-bs-toggle="collapse">Skills</a>
+  <div id="statement" class="collapse">
+  I possess proficient skills in JavaScript, HTML, and CSS, making me well-versed in front-end web development. In JavaScript, 
+  I am adept at crafting dynamic and interactive web applications, 
+  utilizing features like DOM manipulation and asynchronous programming. My proficiency in HTML enables 
+  me to create well-structured and semantic web pages, 
+  ensuring accessibility and search engine optimization. Additionally, 
+  my expertise in CSS allows me to style and design visually appealing interfaces, employing techniques such as flexbox and grid layouts. 
+  With a keen eye for detail and a commitment to staying updated on the latest web development trends,
+   I am capable of producing seamless and responsive user experiences across various platforms.
+  </div>
+
+
+<div class="container mt-3">
+  <img src="/images/ps-logo.png" alt="ps-logo" class="logo"><br>
+  <a href="#statement" class="btn btn-primary" data-bs-toggle="collapse">Problem solving skills</a>
+  <div id="statement" class="collapse">
+   I take pride in my strong problem-solving skills, which I have honed through various challenges and projects. I possess a systematic 
+   and analytical approach to problem-solving, breaking down complex issues
+    into manageable components to identify root causes. Whether faced with coding bugs, 
+   algorithmic puzzles, or broader project-related obstacles, I demonstrate resilience
+    and creativity in finding effective solutions. My ability to think critically 
+   and logically, coupled with a persistent mindset, enables me to navigate through diverse 
+   problems efficiently. Additionally, I am skilled in collaborating with team members to 
+   brainstorm ideas and implement innovative solutions, fostering a collaborative and results-oriented
+    environment. These problem-solving skills contribute not only to my success in 
+   programming but also to my effectiveness in addressing challenges across different domains.
+  </div>
+  <br> <br>
+
+  <!-- next is projects part-->
+  <h1 id="project">MY PROJECTS</h1><br>
+  <table><tr><td>
+<div class="container mt-3">
+  <div class="card">
+    <img class="card-img-top" src="/images/project1-f.png" alt="Card image">
+    <div class="card-body">
+      <h2 class="card-title">Fashion Blog website</h2>
+      <p class="card-text">Explore the latest trends and style inspirations at our fashion blog company website. Immerse yourself
+         in a world of curated content, where we blend expertise
+         and passion to guide you through the ever-evolving landscape of fashion. </p>
+      <a href="#" class="btn btn-primary">Visit Site</a>
+    </div>
+  </div>
+  </td>
+<td>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">SWEET HOMES INTERIORS</h2>
+      <p class="card-text">Explore the art of spaces with our interior designing company 
+        website, where creativity meets functionality. Immerse yourself in a world of curated designs,
+         transforming interiors into personalized expressions of style and comfort.</p>
+      <a href="#" class="btn btn-primary">Visit Site</a>
+    </div>
+    <img class="card-img-bottom" src="/images/interior-design.png" alt="Card image">
+  </div>
+</td>
+<td><div class="card">
+    <img class="card-img-top" src="/images/shoes.png" alt="Card image">
+    <div class="card-body">
+      <h2 class="card-title">Fashion Footwear</h2>
+      <p class="card-text">Step into style and comfort with our cutting-edge shoe collection. Explore our website for a curated 
+        selection of trendy and quality footwear that seamlessly blends fashion and functionality. </p>
+      <a href="#" class="btn btn-primary">Visit Site</a>
+    </div>
+  </div></td>
+</div>
+</tr>
+</table>
+<br><br>
+<h1 id="ContactMe">Contact Me</h1><br>
+<div class="container mt-3">
+  <h2>Contact Me</h2>
+  <form >
+    <div>
+      <label for="email">Fullname</label>
+      <input type="text" class="form-control" id="fullname" placeholder="Enter your Fullname" name="text">
+    </div>
+     <div>
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+    </div><br>
+    <label>Type Your message:</label>
+    <textarea class="form-control" rows="5" id="comment" name="text"></textarea><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br><br>
+  <footer>
+    <div>
+      <div>Follow Links!!</div>
+      <div>
+        <div class="logo-icons">
+        <!-- GitHub icon with link -->
+        <a href="https://github.com/nupur12332" target="_blank">
+          <img src="/images/github.png" alt="GitHub">
+        </a>
+        <!-- LinkedIn icon with link -->
+        <a href="https://www.linkedin.com/in/nupur-patel-87a91423a/" target="_blank">
+          <img src="/images/linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+      </div>
+    </div>
+    <p>&copy; 2024 Nupur Patel. All rights reserved</p>
+  </footer>
+</div>
+</body>
+</html>
