@@ -9,12 +9,13 @@
     {{{body}}}
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+     <!--This part shows code for fixed navigation bar. Reference: www.w3school.com-->
       <header><nav class="fixed-top">
         <div class="container-fluid" >
         <a class="navbar-brand" href="#"></a>
       <img src="/images/logo.png"  class="rounded-pill">
       </div>
-      
+      <!--This line of code is used for adding links to other pages in nav bar -->
     <ul class="nav justify-content-end">
     <li><a class="text-light" href="home.hbs">Home</a></li>
     <li><a class="text-light" href="knowme.hbs">Know me</a></li>
@@ -55,7 +56,7 @@
     </div>
   </div>
   
-  <!--This part of code executes previous button and next button -->
+  <!--This part of code executes previous button and next button.Reference: www.w3schools.com-->
   <button class="carousel-control-prev" type="button" data-bs-target="#" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
@@ -64,12 +65,14 @@
   </button>
   </div>
 </div> 
-<br><br>
+<br>
 
 <!-- here starts the know ME parrt-->
 <h1 id="knowme">Get to know me!!</h1><br>
+<table class="center"><tr>
 <div class="container mt-3">
-  <img src="/images/js-logo.png" alt="js-logo" class="logo"><br>
+  <td><img src="/images/js-logo.png" alt="js-logo" class="logo"><br>
+  <!--adding collapse button -->
   <a href="#statement" class="btn btn-primary" data-bs-toggle="collapse">Skills</a>
   <div id="statement" class="collapse">
   I possess proficient skills in JavaScript, HTML, and CSS, making me well-versed in front-end web development. In JavaScript, 
@@ -80,11 +83,10 @@
   my expertise in CSS allows me to style and design visually appealing interfaces, employing techniques such as flexbox and grid layouts. 
   With a keen eye for detail and a commitment to staying updated on the latest web development trends,
    I am capable of producing seamless and responsive user experiences across various platforms.
-  </div>
-
-
-<div class="container mt-3">
+  </div></td>
+<td>
   <img src="/images/ps-logo.png" alt="ps-logo" class="logo"><br>
+  <!--adding collapse button -->
   <a href="#statement" class="btn btn-primary" data-bs-toggle="collapse">Problem solving skills</a>
   <div id="statement" class="collapse">
    I take pride in my strong problem-solving skills, which I have honed through various challenges and projects. I possess a systematic 
@@ -98,12 +100,17 @@
     environment. These problem-solving skills contribute not only to my success in 
    programming but also to my effectiveness in addressing challenges across different domains.
   </div>
+  </td>
+</div>
+  </tr>
+  </table>
   <br> <br>
 
   <!-- next is projects part-->
   <h1 id="project">MY PROJECTS</h1><br>
   <table><tr><td>
 <div class="container mt-3">
+  <!-- Here i have used card to show all my projects with a message and button to visit the site -->
   <div class="card">
     <img class="card-img-top" src="/images/project1-f.png" alt="Card image">
     <div class="card-body">
@@ -140,6 +147,7 @@
 </tr>
 </table>
 <br><br>
+<!--Here starts the contact me part. I have used forms here to create this page -->
 <h1 id="ContactMe">Contact Me</h1><br>
 <div class="container mt-3">
   <h2>Contact Me</h2>
@@ -173,6 +181,7 @@
       </div>
       </div>
     </div>
+    <!--here i haved a copyright line at the end -->
     <p>&copy; 2024 Nupur Patel. All rights reserved</p>
   </footer>
 </div>
