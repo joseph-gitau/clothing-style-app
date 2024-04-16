@@ -1,0 +1,42 @@
+
+<br><br>
+<form class="form" method="post" action="/signup.hbs">
+    <h1>
+    Sign-up
+</h1>
+    <fieldset>
+    <label for="username" class="col-2">
+        Create Username:
+    </label><br>
+   <input type="text" name="username" id="username" required>
+    </fieldset>
+    <fieldset>
+    <label for="password" class="col-2">
+        Create Password:
+    </label><br>
+   <input type="password" name="password" id="password" required>
+    </fieldset><br>
+    <fieldset>
+        <button type="submit" id="submit">Submit</button>
+    </fieldset><br>
+    <fieldset>
+    <p>Already have account?<a href="signin.hbs">Sign-in</a></p>
+    
+    </fieldset>
+</form><br><br>
+<table><thead>
+    <th>Username</th>
+    <th>Password</th>
+</thead>
+<tbody>
+    {{#each dataset}}
+    <tr>
+        <td>{{this.username}}</td>
+        <td>{{this.password}}</td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
+<br><br>
+
+

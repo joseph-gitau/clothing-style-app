@@ -2,7 +2,44 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+footer{
+  background-color: #333;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between; /* This aligns children to the left and right */
+  align-items: center;
+  color: white;
+}
 
-a {
-  color: #00B7FF;
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+form {
+  border: 2px solid black; 
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Fixed width, but you can use max-width for responsiveness */
+}
+
+.card{
+  width: 400px;
+}
+.card-img-top{
+  width: 100px;
+  height: auto;
+}
+.card-img-bottom{
+  width: 100px;
+  height: auto;
+}
+#project{
+text-align: center;
+font-size: xx-large;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
