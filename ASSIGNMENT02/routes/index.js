@@ -7,16 +7,16 @@ const Book = require("../models/book");
 router.get('/home', (req, res) => {
   res.render('home');
 });
-// get know me page
+// get signup page
 router.get('/signup', async(req, res,next) => {
   let book = await Book.find()
   res.render('signup', {dataset: book});
 });
-//get projects page
+//get signin  page
 router.get('/signin', (req, res) => {
   res.render('signin');
 });
-//get contact me page
+//get recommend page
 router.get('/recommend', (req, res) => {
   res.render('recommend');
 });
@@ -27,6 +27,6 @@ router.post("/signup", async(req, res, next)=>{
     password: req.body.password,
   });
   await newBook.save();
-  res.redirect("/signup");
+  res.redirect("/signin");
 });
 module.exports = router;
