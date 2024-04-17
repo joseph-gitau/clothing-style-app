@@ -4,21 +4,21 @@ var router = express.Router();
 const Book = require("../models/book");
 
 /* GET home page. */
-router.get('/home.hbs', (req, res) => {
-  res.render('home.hbs');
+router.get('/home', (req, res) => {
+  res.render('home');
 });
 // get know me page
-router.get('/signup.hbs', async(req, res,next) => {
+router.get('/signup', async(req, res,next) => {
   let book = await Book.find()
-  res.render('signup.hbs', {dataset: book});
+  res.render('signup', {dataset: book});
 });
 //get projects page
-router.get('/signin.hbs', (req, res) => {
-  res.render('signin.hbs');
+router.get('/signin', (req, res) => {
+  res.render('signin');
 });
 //get contact me page
-router.get('/recommend.hbs', (req, res) => {
-  res.render('recommend.hbs');
+router.get('/recommend', (req, res) => {
+  res.render('recommend');
 });
 
 router.post("/signup", async(req, res, next)=>{
