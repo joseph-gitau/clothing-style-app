@@ -1,0 +1,57 @@
+<div class="col-md-10 mt-2">
+  <h1>{{title}}</h1>
+  <form action="/clothing/{{clothing._id}}" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        value="{{clothing.name}}"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="category">Category:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="category"
+        name="category"
+        value="{{clothing.category}}"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input
+        type="number"
+        class="form-control"
+        id="price"
+        name="price"
+        value="{{clothing.price}}"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea
+        id="description"
+        name="description"
+        class="form-control"
+      >{{clothing.description}}</textarea>
+    </div>
+    <div class="form-group">
+      <label for="imageUrl">Image URL:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="imageUrl"
+        name="imageUrl"
+        value="{{clothing.imageUrl}}"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Update Clothing Item</button>
+  </form>
+</div>
