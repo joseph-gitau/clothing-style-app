@@ -65,4 +65,22 @@ router.post('/:id/delete', async (req, res) => {
     }
 });
 
+// Search clothing items (Read)
+router.get('/search', async (req, res) => {
+    const query = req.query.q || '';
+    try {
+        const clothes = await Clothing.find({
+            $or: [
+                { name: { $regex: query, $options: 'i' } },
+                { category: { $regex: query, $options: 'i' } },
+                { description: { $regex: query, $options: 'i' } }
+            ]
+        }).exec();
+        res.render('clothing/index', { title: 'Search Results', clothes, query });
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
+
+
 module.exports = router;

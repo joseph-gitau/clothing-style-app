@@ -1,5 +1,27 @@
 <h1 class="mt-4">{{title}}</h1>
-<a href="/clothing/new" class="btn btn-primary mb-4">Add New Clothing Item</a>
+<form
+  action="/clothing/search"
+  method="GET"
+  class="form-inline mt-2 mb-2 my-lg-0"
+>
+  <div class="input-group">
+    <input
+      type="text"
+      name="q"
+      value="{{query}}"
+      class="form-control mr-sm-2"
+      placeholder="Search clothing items..."
+      required
+    />
+    <div class="input-group-append">
+      <button type="submit" class="btn btn-primary">
+        Search
+      </button>
+    </div>
+  </div>
+</form>
+
+<a href="/clothing/new" class="btn btn-primary my-2">Add New Clothing Item</a>
 <div class="row">
   {{#each clothes}}
     <div class="col-md-4">
