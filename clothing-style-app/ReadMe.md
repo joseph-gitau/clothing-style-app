@@ -33,4 +33,4 @@ The Clothing Style Application is a Node.js-based web application that allows us
 
 ## Deployment
 
-The application is hosted on [Render](https://render.com) and can be accessed via the following URL: [https://clothing-style-app.onrender.com](https://clothing-style-app.onrender.com).
+The application is hosted on [Render](https://render.com) and can be accessed via the following URL: [https://clothing-style-app.onrender.com/](https://clothing-style-app.onrender.com/).
