@@ -4,5 +4,63 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #00b7ff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
